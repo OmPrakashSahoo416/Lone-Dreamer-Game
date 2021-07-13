@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3667498040206016922
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3667498040206016916}
+  - component: {fileID: 3667498040206016923}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3667498040206016916
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3667498040206016922}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -35.085926, y: 5.4690194, z: 197138.17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3667498040206016923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3667498040206016922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48060dba3fc9d2149b20fd1c2af0ce43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: coincollection
+    clip: {fileID: 8300000, guid: 54e0423345cd444429fe849b1a64daf5, type: 3}
+    volume: 1
+    pitch: 3
+    source: {fileID: 0}
+  - name: jump
+    clip: {fileID: 8300000, guid: 52308771d26a492468d15f272e24c316, type: 3}
+    volume: 0.8
+    pitch: 3
+    source: {fileID: 0}
+  - name: playerdeath
+    clip: {fileID: 8300000, guid: a1c2540afbad1ff45b43763fb58951df, type: 3}
+    volume: 1
+    pitch: 3
+    source: {fileID: 0}
+  - name: lostlife
+    clip: {fileID: 8300000, guid: e9a4ecf5b08a920419f4050c4cdbb867, type: 3}
+    volume: 1
+    pitch: 2
+    source: {fileID: 0}
+  - name: enemydeath
+    clip: {fileID: 8300000, guid: dd87074563149994e906deac42f368d6, type: 3}
+    volume: 1
+    pitch: 2
+    source: {fileID: 0}
+  - name: gamewin
+    clip: {fileID: 8300000, guid: 7e7431686ca5f1b438ec698040fd655a, type: 3}
+    volume: 0.5
+    pitch: 2
+    source: {fileID: 0}
+  - name: goldenkey
+    clip: {fileID: 8300000, guid: 0f93baf07a052b0429d510b9d9dddcbb, type: 3}
+    volume: 0.8
+    pitch: 1
+    source: {fileID: 0}
+  - name: redkey
+    clip: {fileID: 8300000, guid: f29164a72431c3649a14d34eb4c8b537, type: 3}
+    volume: 0.8
+    pitch: 1
+    source: {fileID: 0}
