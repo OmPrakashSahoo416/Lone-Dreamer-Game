@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 public class climb : MonoBehaviour
@@ -10,10 +9,14 @@ public class climb : MonoBehaviour
 
     private void Update()
     {
+        
         vertical = Input.GetAxis("Vertical");
         if (isladder && Mathf.Abs(vertical) > 0f) {
             isclimbing = true;
         }
+       
+       
+       
     }
     private void FixedUpdate()
     {
@@ -21,11 +24,13 @@ public class climb : MonoBehaviour
         {
             rbplayer.gravityScale = 0f;
             rbplayer.velocity = new Vector2(rbplayer.velocity.x, vertical * speed);
+            
         }
         else {
             rbplayer.gravityScale = 5f;
         }
  
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -41,5 +46,6 @@ public class climb : MonoBehaviour
             isclimbing = false;
         }
     }
+  
 
 }
